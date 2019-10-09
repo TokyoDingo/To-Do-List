@@ -1962,6 +1962,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "TodoList/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/TodoList.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TodoList.dll": {}
+        }
       }
     }
   },
@@ -6569,11 +6579,17 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "TodoList/1.0.0": {
+      "type": "project",
+      "path": "../../src/TodoList/TodoList.csproj",
+      "msbuildProject": "../../src/TodoList/TodoList.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Microsoft.NET.Test.Sdk >= 16.2.0",
+      "TodoList >= 1.0.0",
       "coverlet.collector >= 1.0.1",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
@@ -6602,7 +6618,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\tomhem\\dotnet\\todolist\\src\\TodoList\\TodoList.csproj": {
+              "projectPath": "C:\\Users\\tomhem\\dotnet\\todolist\\src\\TodoList\\TodoList.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
